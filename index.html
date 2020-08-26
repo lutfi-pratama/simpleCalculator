@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Halaman 1</title>
+ 	<link rel="stylesheet" href="src/styles/styles.css">
+	<link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+
+ </head>
+ <body>
+ 	<h1>Kalkulator Sederhana</h1>
+ 	<main>
+ 		<div class="angka">
+	 		<input type="number" id="num1">
+	 	</div>
+	 	<div class="simbol">
+	 		<input id="symbol" list="symbols"> 
+	        <datalist id="symbols"> 
+	            <option value="+" /> 
+	            <option value="-" /> 
+	            <option value="*" /> 
+	            <option value="/" /> 
+	            <option value="%" /> 
+	        </datalist> 
+	 	</div>
+	 	<div class="angka">
+	 		<input type="number" id="num2">
+	 	</div>
+	 	<button type="button" onclick="hitung()">Hitung</button>
+	 	<button type="button" onclick="set()">Reset</button>
+	 	
+	 	<div class="answear"></div>
+ 	</main>
+
+
+ 	<script src="src/app/app.js"></script>
+ 	<script src="src/app/hitung.js"></script>
+ 	<script src="src/app/reset.js"></script>
+ 	<script src="dist/main.js"></script>
+ </body>
+ </html>
