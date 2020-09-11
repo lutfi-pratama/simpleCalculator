@@ -1,4 +1,4 @@
-const calculate = (num1, num2, sym) => {
+export const calculate = (num1, num2, sym) => {
 	let result = num2;
 	if (!isNaN(result)){
 		if (sym === '+') {
@@ -23,3 +23,5 @@ const calculate = (num1, num2, sym) => {
 		}
 	}
 }
+
+
